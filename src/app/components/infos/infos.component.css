@@ -1,0 +1,36 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Change la couleur de fond pour les rendre visibles */
+    border-radius: 50%;
+    /* Arrondi des coins pour un effet de bouton */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Largeur des boutons de contrôle */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    /* Centre verticalement */
+    transform: translateY(-50%);
+    /* Ajustement pour centrer */
+    z-index: 10;
+    /* S'assurer qu'elles sont au-dessus du texte */
+}
+
+/* Ajuster les positions des flèches */
+.carousel-control-prev {
+    left: -50px;
+    /* Ajuste cette valeur selon tes besoins */
+}
+
+.carousel-control-next {
+    right: -50px;
+    /* Ajuste cette valeur selon tes besoins */
+}
+

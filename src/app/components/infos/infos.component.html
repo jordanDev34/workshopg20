@@ -1,0 +1,73 @@
+<!-- <div *ngIf="infos.length === 0">
+  <p>Les informations ne sont pas disponibles pour le moment.</p>
+</div> -->
+
+<div class="container my-4">
+  <div class="text-center my-3">
+    <h3 class="text-center">Découvrez les informations essentielles de votre BDE Epsi</h3>
+  </div>
+  
+<div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- <div class="carousel-item" *ngFor="let info of infos; let isFirst = first" [class.active]="isFirst">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ info.title }}</h5>
+          <p class="card-text">{{ info.description }}</p>
+        </div>
+      </div>
+    </div> -->
+    <div class="carousel-item active">
+      <div class="card">
+        <div class="card-body">
+
+          <h4 class="card-title text-center">Inclusion, on en parle ?</h4>
+          <p class="card-text">La création de cet espace a pour objectif de mettre à votre disposition un parcours d’initiation dédié à 6 thématiques essentielles en lien avec l’inclusion.</p>
+          <p class="card-text">Cet espace d’information et de sensibilisation est développé autour de 4 grandes thématiques :</p>
+          <p class="card-text">Mixité et métiers non genrés - Harcèlement sexuel, cyberharcèlement</p>
+          <p class="card-text">Discriminations et Handicap</p>
+        
+        </div>
+      </div>
+  </div>
+
+  <div class="carousel-item">
+
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center">EPSI - Orientation : et après le diplôme ?</h4>
+          <p class="card-text">1/Les données du marché de l’emploi </p>
+          <p class="card-text">2/Les données de l’emploi de votre filière d’études </p>
+          <p class="card-text">3/Je m’informe sur ma poursuite d’études </p>
+          <p class="card-text"> 4/Ressources complémentaires</p>
+        </div>
+      </div>
+    </div>
+<div class="carousel-item">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title text-center">Je poursuis mes études au sein des écoles du réseau C&D</h4>
+            <p class="card-text">Vous êtes en deuxième année de BTS ou en troisième année de Bachelor et souhaitez poursuivre vos études l'année prochaine ?</p>
+            <p class="card-text">Les 14 grandes écoles et Centres de Formation d’Apprentis du réseau Compétences et Développement</p>
+            <p class="card-text"> Il préparent à de nombreux métiers dans différentes spécialisations :</p>
+            <p class="card-text"> management responsable, ingénierie informatique, architecture intérieure, business development.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Les flèches de contrôle à l'extérieur du carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+    <div class="text-center mt-4">
+    <a href="#" (click)="showMoreCards()">Voir + d'actualités</a>
+  </div>
+</div>

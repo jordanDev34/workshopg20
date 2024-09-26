@@ -1,0 +1,54 @@
+<div class="propose-event">
+  <h3>Tu as consulté tous les évènements proposés et tu n'as pas trouvé ton bonheur ?</h3>
+  <p>Propose-nous ton idée et nous la publierons si elle est validée !</p>
+
+  <!-- Bouton pour afficher le formulaire dans une modal -->
+  <button class="btn btn-primary" (click)="toggleForm()">Sois créatif et clique ici</button>
+
+  <!-- Modal -->
+  <div *ngIf="showForm" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Propose ton évènement</h5>
+          <button type="button" class="btn-close" (click)="toggleForm()"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Si le formulaire est soumis, affiche le message de confirmation -->
+          <div *ngIf="isSubmitted" class="alert alert-success">
+            Formulaire envoyé avec succès !
+          </div>
+
+          <!-- Formulaire de proposition d'évènement -->
+          <form *ngIf="!isSubmitted" #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom :</label>
+              <input type="text" id="name" name="name" class="form-control" [(ngModel)]="eventData.name" required>
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Prénom :</label>
+              <input type="text" id="surname" name="surname" class="form-control" [(ngModel)]="eventData.surname" required>
+            </div>
+            <div class="mb-3">
+              <label for="dob" class="form-label">Date de naissance :</label>
+              <input type="date" id="dob" name="dob" class="form-control" [(ngModel)]="eventData.dob" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Téléphone :</label>
+              <input type="tel" id="phone" name="phone" class="form-control" [(ngModel)]="eventData.phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse e-mail :</label>
+              <input type="email" id="email" name="email" class="form-control" [(ngModel)]="eventData.email" required>
+            </div>
+            <div class="mb-3">
+              <label for="proposal" class="form-label">Proposition d'évènement :</label>
+              <textarea id="proposal" name="proposal" class="form-control" [(ngModel)]="eventData.proposal" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Soumettre</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

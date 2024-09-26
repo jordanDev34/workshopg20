@@ -1,0 +1,20 @@
+.propose-event {
+    margin-bottom: 50px;
+    /* Marge pour séparer le composant du footer */
+}
+
+.modal-dialog {
+    max-width: 500px;
+    /* Limiter la largeur de la modal */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+button.btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+header {
+    margin-bottom: 20px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+img {
+    display: block;
+}

@@ -1,0 +1,15 @@
+/* calendar.component.css */
+
+/* Ajuster la largeur et la hauteur du calendrier */
+#events-section {
+    max-width: 800px;
+    /* Largeur maximum du calendrier */
+    margin: 0 auto;
+    /* Centre le calendrier horizontalement */
+}
+
+/* Optionnel : Ajuster la hauteur */
+.full-calendar {
+    height: 600px;
+    /* Ajustez selon vos besoins */
+}
